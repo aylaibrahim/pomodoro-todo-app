@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List with Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/meliodash" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="clock-section">
+      <div class="date-display" id="currentDate"></div>
+      <div class="time-display" id="currentTime">21:00</div>
+    </div>
+
+    <div class="main-content">
+      <div class="todo-section">
+        <h2>To-Do List</h2>
+        <ul id="taskList"></ul>
+        <div class="button-container">
+          <input type="text" id="taskInput" placeholder="Add a new task">
+          <button id="addTaskBtn">+</button>
+          <button id="refreshBtn">Refresh</button>
+        </div>
+      </div>
+
+      <div class="pomodoro-section">
+        <div class="pomodoro-timer">
+          <div class="timer-circle">
+            <span id="pomodoroTime">25:00</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="startBtn">Start</button>
+          <button id="pauseBtn">Pause</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
